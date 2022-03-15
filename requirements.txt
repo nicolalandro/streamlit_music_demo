@@ -1,0 +1,7 @@
+streamlit
+
+music21
+pretty_midi
+
+scipy
+numpy
