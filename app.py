@@ -16,7 +16,7 @@ st.markdown('This example need a .xml music file as input and show partiture, pi
 
 example_1 = st.button('Test Example')
 
-uploaded_file = st.file_uploader("Choose a xml music file", type='xml')
+uploaded_file = st.file_uploader("Choose a .xml music file", type='xml')
 
 if uploaded_file is not None or example_1:
     if uploaded_file is not None:
