@@ -12,7 +12,7 @@ from scipy.io import wavfile
 import numpy as np
 
 st.title('Music Demo')
-st.markdown('This example need a .xml music file as input. You can generate it from MuseScore or similar software.')
+st.markdown('This example need a .xml music file as input and show partiture, piano roll and a simply wav. You can generate it from MuseScore or similar software.')
 
 example_1 = st.button('Test Example')
 
