@@ -1,5 +1,9 @@
-*.mid
 *.pyc
 __pycache__
+
 .venv
 venv
+
+*.mid
+*.xml
+!examples/test.xml

@@ -14,13 +14,18 @@ import numpy as np
 st.title('Music Demo')
 st.markdown('This example need a .xml music file as input. You can generate it from MuseScore or similar software.')
 
-uploaded_file = st.file_uploader("Choose a xml music file")
+example_1 = st.button('Test Example')
 
-if uploaded_file is not None:
-    # save file
-    with open(os.path.join(os.getcwd(), uploaded_file.name), "wb") as f:
-        f.write(uploaded_file.getbuffer())
-    file_path = os.path.join(os.getcwd(), uploaded_file.name)
+uploaded_file = st.file_uploader("Choose a xml music file", type='xml')
+
+if uploaded_file is not None or example_1:
+    if uploaded_file is not None:
+        # save file
+        with open(os.path.join(os.getcwd(), uploaded_file.name), "wb") as f:
+            f.write(uploaded_file.getbuffer())
+        file_path = os.path.join(os.getcwd(), uploaded_file.name)
+    else:
+        file_path = 'examples/test.xml'
 
     # Show partiture with music21
     music = music21.converter.parse(file_path)
