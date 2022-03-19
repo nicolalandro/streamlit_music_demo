@@ -24,4 +24,7 @@ Here I list the basic knowledge used to implement this project.
 * [Music21](http://web.mit.edu/music21/): to read and plot .xml music
 * [LillyPond](https://lilypond.org/): dependecy of Music21 to plot partiture
 * [pretty_midi](http://craffel.github.io/pretty-midi/): to read mid and synthesize it into a wav
-* numpy: for math operation
+* [note_seq](https://github.com/magenta/note-seq/): to plot piano roll
+* [bokeh](https://bokeh.org/): used from note_seq to plot piano roll
+* [numpy](https://numpy.org/): for math operations
+* [scipy](https://scipy.org/): to save wave (TODO: should it be better to do with other libs?)

@@ -2,6 +2,8 @@ streamlit
 
 music21
 pretty_midi
+note_seq
+bokeh==2.4.1
 
 scipy
 numpy
