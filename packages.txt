@@ -1,1 +1,2 @@
 lilypond
+libsndfile-dev
