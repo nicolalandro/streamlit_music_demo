@@ -1,7 +1,6 @@
-pip==22.0.4
 streamlit
 
-music21
+music21==7.1.0
 pretty_midi
 note_seq
 bokeh==2.4.1
