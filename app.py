@@ -25,10 +25,10 @@ if uploaded_file is not None:
 
         # Show partiture with music21
         music = music21.converter.parse(file_path)
-        streaming_partiture = str(music.write('/tmp/lily.png'))
-        image = Image.open(streaming_partiture)
-        st.text('Partiture')
-        st.image(image)
+        # streaming_partiture = str(music.write('/tmp/lily.png'))
+        # image = Image.open(streaming_partiture)
+        # st.text('Partiture')
+        # st.image(image)
 
         # save to mid
         midi_path = file_path + '.mid'
